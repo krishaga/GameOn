@@ -1,0 +1,64 @@
+.arcade-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+    padding: 0 5vw 0 5vw;
+}
+
+.product h5{
+    padding-top: 5%;
+    overflow-x: visible;
+    text-wrap: nowrap;
+}
+
+.product {
+    width: calc(25% - 40px);
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid var(--bg2color);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+    font-size: 1.6vw;
+    cursor: pointer;
+}
+
+.product:hover {
+    scale: 1.08;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.3);
+    transition: 0.25s ease-in-out;
+    background-color: rgb(13, 255, 215);
+    color:#013031;
+  }
+
+.product img {
+    width: 100%;
+    aspect-ratio: 1.4;
+    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+
+    /* border-radius: max(2.5vw, 2.5vh); */
+}
+
+.product>.about {
+    font-size: smaller;
+}
+
+.product>.addCart {
+    border: none;
+    padding: min(1vh, 0.6vw);
+    background-color: #7de472;
+    color: #1e1e1e;
+    border-radius: max(2.5vw, 2.5vh);
+    font-size: max(0.9vw, 0.5vh);
+}
+
+.product>.arcade_links{
+    text-decoration: none;
+    color: var(--bg2color);
+}
+
+.product>.addCart:hover {
+    background-color: #6baa27;
+}

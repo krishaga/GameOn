@@ -1,0 +1,128 @@
+:root {
+    --fcolor: #eee;
+    --bcolor: #121211;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0%;
+    margin: 0;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+body {
+    padding: 0%;
+    margin: 0;
+    background-color: var(--bcolor);
+}
+
+body::-webkit-scrollbar {
+    background-color: #121211;
+    width: 1.3vh;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0e7a7c;
+    cursor: grab;
+}
+
+.landing-bg {
+    /* padding: 0; */
+    /* margin: -1vw; */
+    /* width: 100vw; */
+    height: 90vh;
+    background-image: url(/assets/bg.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 30%;
+    position: relative;
+}
+
+.rnr {
+    height: 90vh;
+    background-color: #101717;
+    color: var(--fcolor);
+    padding: 50px;
+}
+
+.rnr>ol {
+    margin: 120px;
+    font-size: larger;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ol>li{
+    margin: 40px;
+}
+
+.arcade {
+    background-color: #0e7a7c;
+    /* height: auto; */
+}
+
+.header {
+    margin: 0;
+    position: fixed;
+    background-color: #101717;
+    width: 100vw;
+    z-index: 999;
+}
+
+.header img {
+    padding-left: 1vmin;
+    width: 16vmin;
+}
+
+.ctf_logo {
+
+    display: flex;
+    opacity: 100%;
+    z-index: 99;
+
+    position: absolute;
+
+    /* margin-left: min(32vw,4vh); */
+    margin-top: -24vw;
+    margin-left: 30vw;
+
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vmax;
+    color: var(--fcolor);
+}
+
+.ctf_logo>#up_text {
+    animation-name: up_animation;
+    animation-duration: 1s;
+}
+
+.ctf_logo>#level_text {
+    animation-name: level_animation;
+    animation-duration: 1s;
+}
+
+@keyframes up_animation {
+    from {
+        margin-top: -5vw;
+    }
+}
+
+@keyframes level_animation {
+    from {
+        margin-top: 5vw;
+    }
+}
+
+.complete {
+    margin-top: 80px;
+}
